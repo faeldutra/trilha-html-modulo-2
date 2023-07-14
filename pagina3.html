@@ -6,33 +6,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especialidades e horarios</title>
     <link rel="stylesheet" href="./src/imagens/css/base.css">
+    <style>
+
+        ul{
+            list-style: none;
+        }
+
+        ul li a{
+            display: flex;
+            padding: 5px;
+        }
+
+        img{
+            display: flex;
+            margin: 0px 250px;
+        }
+
+        table{
+            -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+        }
+
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+
+        table tbody tr:nth-child(even) td{
+            background-color: rgb(241, 235, 235);
+        }
+
+        table tbody tr:hover td{
+            background-color: rgb(245, 245, 181);
+        }
+
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="menu">
+            <h3>Navegue pelo site</h3>
             <ul>
-                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="pagina2.html">Sobre nós</a></li>
-                <li><a href="pagina3.html">Especialidades e horarios</a></li>
+                <li><a href="pagina3.html">Especialidades e Valores</a></li>
                 <li><a href="pagina4.html">Contato</a></li>
             </ul>
         </div>
         <div class="main">
-            <div class="header">
-                <img src="./imagens/imagen-pagina-principal.jpg" alt="" height="150" width="986" style="display: flex;" />
+            <div class="header" style="background: url(./src/imagens/bg-pagina3.svg); background-repeat: no-repeat; background-size: cover; background-position: center; text-align: center;">
+                <h1>Especialidades e Horários</h1>
             </div>
     
             <div class="content">
-                Content
-                <!-- Aqui vai o seu conteúdo -->
+                <p> Aqui na Medical Clinic oferecemos valores acessíveis, com descontos de até 25% na sua primeira consulta, entre em <a href="pagina4.html">contato</a> com a gente e verifique todas as ofertas e a disponibilidade de convênios parceiros!</p>
+                <img src="./src/imagens/imagem6.jpg" alt="Imagem de mulher usando um estetoscópio e ao lado escrito Consulta, clinica médica, R$85,00" width="400">
+
+                <p>Confira a baixo nossa grade de horários e valores para cada especialidade:</p>
+
+                <table summary="Esta tabela se refere as especialidades e os horarios disponiveisna da clinica, assim comp o valor de cada consulta" width="800" align="center" cellspacing="0" cellpadding="7" border="1">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda á Sexta</th>
+                            <th>Sábado</th>
+                            <th>Domingos</th>
+                            <th>Feriados</th>
+                            <th>Valores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínico Geral</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>07h-14h</td>
+                            <td>07h-14h</td>
+                            <td>R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cardiologia</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>09h-12h e 14h-16h</td>
+                            <td>07h-14h</td>
+                            <td>-</td>
+                            <td>R$105,00</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h-11h e 13h-16h</td>
+                            <td>09h-12h e 14h-16h</td>
+                            <td>07h-14h</td>
+                            <td>-</td>
+                            <td>R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pisiquiatria</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>07h-14h</td>
+                            <td>-</td>
+                            <td>R$100,00</td>
+                        </tr>
+                        <tr>
+                            <td>Dermatologia</td>
+                            <td>08h-11h e 13h-16h</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>-</td>
+                            <td>07h-14h</td>
+                            <td>R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Nutrição</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>07h-14h</td>
+                            <td>07h-14h</td>
+                            <td>R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>11h-16h</td>
+                            <td>07h-14h</td>
+                            <td>-</td>
+                            <td>R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Dentista</td>
+                            <td>09h-12h e 14h-16</td>
+                            <td>11h-16h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Ortorrinolaringologista</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>R$105,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>07h-14h</td>
+                            <td>07h-14h</td>
+                            <td>R$85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Geriatria</td>
+                            <td>08h-11h e 13h-16h</td>
+                            <td>09h-12h e 14h-16h</td>
+                            <td>07h-14h</td>
+                            <td>07h-14h</td>
+                            <td>R$95,00</td>
+                        </tr>
+                        <tr>
+                            <td>Urologia</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>08h-10h e 12h-16h</td>
+                            <td>-</td>
+                            <td>07h-14h</td>
+                            <td>R$95,00</td>
+                        </tr>
+                        <tr>
+                            <td>Ginecologia</td>
+                            <td>07h-11h e 13h-17h</td>
+                            <td>09h-12h e 14h-16h</td>
+                            <td>07h-14h</td>
+                            <td>07h-14h</td>
+                            <td>R$95,00</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                
+                <p>Nossa clínica é composta por uma equipe multidisciplinar, formada por cirurgiões dentistas e médicos especialistas em saúde integrativa, que trabalham juntos em harmonia para fornecer um atendimento completo, integrado e único aos nossos pacientes.
+                Valorizamos e investimos na capacitação e desenvolvimento profissional de nossa equipe, garantindo que todos os membros estejam atualizados com as últimas tendências e avanços na área de medicina. Isso nos permite oferecer tratamentos de ponta e serviços de alta qualidade aos nossos pacientes, proporcionando resultados eficazes e seguros.</p>
             </div>
     
             <div class="footer">
-                <h4>Entre em contato com nosco pelos telefones ou rede sociais</h4>
+                <h4>Entre em contato conosco pelos telefones ou rede sociais</h4>
+                <p>Telefone: (00) 0000-0000</p>
                 <p>Telefone: (00) 0000-0000</p>
                 <p>Whatsapp: (00) 9 0000-0000</p>
                 <p>Facebook: <a href="#">Medical Clinic</a></p>
-                <p>Instagram: <a href="#">@medical</a></p>
+                <p>Instagram: <a href="#">medical</a></p>
             </div>
         </div>
     </div>

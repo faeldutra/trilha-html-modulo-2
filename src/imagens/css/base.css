@@ -13,7 +13,6 @@ body {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
 }
 
 .main {
@@ -24,21 +23,12 @@ body {
 
 .menu {
     width: 15%;
-    background-color:rgb(224, 217, 217);
+    background-color:rgb(156, 151, 151);
     padding: 10px 20px 0px;
 }
 
-ul{
-    list-style: none;
-}
-
-ul li a{
-    display: flex;
-    padding: 5px;
-}
 
 .header {
-    background-color: rgb(5, 108, 108);
     min-height: 150px;
 }
 

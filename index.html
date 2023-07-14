@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
+    <title>Medical Clinic-Home</title>
     <link rel="stylesheet" href="./src/imagens/css/base.css">
+    <style>
+
+        ul{
+            list-style: none;
+        }
+
+        ul li a{
+            display: flex;
+            padding: 5px;
+        }
+
+        img.imagem{
+            display: flex;
+            margin: 0px 250px;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="menu">
-        <fieldset>
             <h3>Navegue pelo site</h3>
-        </fieldset>
             <ul>
-                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="pagina2.html">Sobre nós</a></li>
-                <li><a href="pagina3.html">Especialidades e horários</a></li>
+                <li><a href="pagina3.html">Especialidades e Valores</a></li>
                 <li><a href="pagina4.html">Contato</a></li>
             </ul>
         </div>
 
         <div class="main">
             <div class="header" style="background: url(./src/imagens/bg-pagina-principal.svg); background-repeat: no-repeat; background-size: cover; text-align: center;">
-                <img src="./src/imagens/logo.png" alt="Desenho de um coração com pulsação" height="100" />
+                <img class="logo" src="./src/imagens/logo.png" alt="Desenho de um coração com pulsação" height="100" />
                 <div>
                     <h1>Medical Clinic</h1>
                 </div>
@@ -33,16 +47,19 @@
                 <p>A Medical Clinic iniciou suas atividades no ano de 2012 na cidade de Sorocaba.Com custo acessível realizamos um trabalho sério e com  muita dedicação.
                 A Nossa Clínica oferece atendimento em diversas especialidades, exames laboratoriais e de imagem.
                 É perfeita para quem não tem plano de saúde e até mesmo para os usuários dos convênios, que preferem ser atendidos com agilidade e rapidez, do que esperar mais de um mês para conseguir horário com um médico especialista.</p>
-                <p>Confira em nosso site <a href="pagina3.html">especialidades e horários</a></p>
-                <img src="./src/imagens/imagem2.jpg" alt="" width="550">
+                <p>Localizado próximo ao centro da cidade, trata-se de uma clínica médica humanizada, portadora de cadeira de rodas para melhor locomoção e elevador, se necessário.
+                Contamos com salas especializadas para cada profissional e aparelhos necessários, oferecendo maior comodidade e melhor atendimento ao paciente.</p>
+                <p>Confira em nosso site <a href="pagina3.html">especialidades, valores e horários</a></p>
+                <img src="./src/imagens/imagem2.jpg" alt="Foto da faixada da Medical Clinical" class="imagem" width="390">
             </div>
     
             <div class="footer">
-                <h4>Entre em contato com nosco pelos telefones ou rede sociais</h4>
+                <h4>Entre em contato conosco pelos telefones ou rede sociais</h4>
+                <p>Telefone: (00) 0000-0000</p>
                 <p>Telefone: (00) 0000-0000</p>
                 <p>Whatsapp: (00) 9 0000-0000</p>
                 <p>Facebook: <a href="#">Medical Clinic</a></p>
-                <p>Instagram: <a href="#">@medical</a></p>
+                <p>Instagram: <a href="#">medical</a></p>
             </div>
         </div>
     </div>

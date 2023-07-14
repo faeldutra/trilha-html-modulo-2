@@ -6,32 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="./src/imagens/css/base.css">
+    <style>
+
+        ul{
+            list-style: none;
+        }
+
+        ul li a{
+            display: flex;
+            padding: 5px;
+        }
+
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: flex;
+            padding: 5px;
+        }
+
+        fieldset {
+            width: 300px;
+            margin: 5px;
+            padding: 15px;
+            border-radius: 10px;
+            border-color: grey;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="menu">
+            <h3>Navegue pelo site</h3>
             <ul>
-                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="pagina2.html">Sobre nós</a></li>
-                <li><a href="pagina3.html">Especialidades e horarios</a></li>
+                <li><a href="pagina3.html">Especialidades e Valores</a></li>
                 <li><a href="pagina4.html">Contato</a></li>
             </ul>
         </div> <div class="main">
             <div class="header" style="background: url(./src/imagens/bg-pagina4.svg); background-repeat: no-repeat; background-size: cover; background-position: center; text-align: center;">
-                
+              <h1>Contato e Endereço</h1>
             </div>
     
             <div class="content">
-                Content
-                <!-- Aqui vai o seu conteúdo -->
-            </div>
-    
-            <div class="footer">
-                <h4>Entre em contato com nosco pelos telefones ou rede sociais</h4>
+
+                <p>Para saber mais ou tirar dúvidas aqui esta nossos meios de contatos:</p>
+                <p>Telefone: (00) 0000-0000</p>
                 <p>Telefone: (00) 0000-0000</p>
                 <p>Whatsapp: (00) 9 0000-0000</p>
                 <p>Facebook: <a href="#">Medical Clinic</a></p>
-                <p>Instagram: <a href="#">@medical</a></p>
+                <p>Instagram: <a href="#">medical</a></p>
+                
+                <h3>Endereço</h3>
+                <p>A Medical Clinic fica localizada na R. Santa Clara - Centro, Sorocaba - SP, 18035-252</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.835720554226!2d-47.460788925298225!3d-23.50242595942841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58aa2ba48ca5d%3A0x534f12140a92c1bf!2sR.%20Santa%20Clara%20-%20Centro%2C%20Sorocaba%20-%20SP%2C%2018035-252!5e0!3m2!1spt-BR!2sbr!4v1689370599675!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <p>Não consegue falar com a gente, tem sugestões ou reclamações? Preencha o formulário e envie uma mensagem diretamente pelo site:</p>
+
+                <form onsubmit="" method="post">
+                    <fieldset>
+                        <legend>Mande uma menssagem</legend>
+                        <div class="row">
+                            <label>Nome:</label><input type="text" name="nome" />
+                            <label>Email:</label><input type="email" name="email" />
+                        </div>
+                        <div class="row">
+                            <label>Telefone:</label><input type="text" name="celular" />
+                            <label>Whatsapp:</label><input type="text" name="whatsapp" />
+                        </div>
+                        <div class="row">
+                            <label>Menssagem:</label>
+                            <textarea name="message" id="" cols="40" rows="10"></textarea>
+                        </div><br>
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+    
+            <div class="footer">
+                <h4>Entre em contato conosco pelos telefones ou rede sociais</h4>
+                <p>Telefone: (00) 0000-0000</p>
+                <p>Telefone: (00) 0000-0000</p>
+                <p>Whatsapp: (00) 9 0000-0000</p>
+                <p>Facebook: <a href="#">Medical Clinic</a></p>
+                <p>Instagram: <a href="#">medical</a></p>
             </div>
         </div>
     </div>
